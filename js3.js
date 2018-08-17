@@ -3,15 +3,20 @@ function main() {
     alert(favNum);
     aboveOrBelow(favNum);
 }
-function aboveOrBelow(favNum){
+
+function aboveOrBelow(favNum) {
     if (favNum > 100) {
         alert("Above 100");
     }
     else if (favNum < 100) {
         alert("Below 100");
     }
-    else {
+    else if (favNum === 100){
         alert("Equal to 100");
+    }
+    else
+    {
+        alert("Error");
     }
 }
 
